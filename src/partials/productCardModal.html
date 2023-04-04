@@ -1,0 +1,108 @@
+<div class="backdrop is-hidden" product-card-modal>
+  <div class="modal_buy-now">
+    <button class="modal_buy-now-close" type="button" product-card-modal-close>
+      <svg class="icon">
+        <use href="./images/sprite.svg#ep_close"></use>
+      </svg>
+    </button>
+    <p class="modal_buy-now__title">Buy now</p>
+    <form class="modal_buy-now__form">
+      <ul class="modal_buy-now__list list">
+        <li class="modal_buy-now__item">
+          <label class="modal_buy-now-checkbox">
+            <input type="checkbox" class="checkbox visually-hidden" />
+            <div class="modal_buy-now-product product-ice-cream">
+              <div class="modal_buy-now-product__frame">
+                <div class="modal_buy-now-product__image">
+                  <img
+                    srcset="
+                      ./images/modal/icecream@1x.png 1x,
+                      ./images/modal/icecream@2x.png 2x
+                    "
+                    src="./images/modal/icecream@1x.png"
+                    alt="Ice Cream"
+                  />
+                </div>
+              </div>
+              <p class="modal_buy-now-product__name">Ice Cream</p>
+            </div>
+          </label>
+        </li>
+        <li class="modal_buy-now__item">
+          <label class="modal_buy-now-checkbox">
+            <input type="checkbox" class="checkbox visually-hidden" />
+            <div class="modal_buy-now-product product-ice-coffe">
+              <div class="modal_buy-now-product__frame">
+                <div class="modal_buy-now-product__image">
+                  <img
+                    srcset="
+                      ./images/modal/icecoffee@1x.png 1x,
+                      ./images/modal/icecoffee@2x.png 2x
+                    "
+                    src="./images/modal/icecoffee@1x.png"
+                    alt="Ice Coffe"
+                  />
+                </div>
+              </div>
+              <p class="modal_buy-now-product__name">Ice Coffe</p>
+            </div>
+          </label>
+        </li>
+        <li class="modal_buy-now__item">
+          <label class="modal_buy-now-checkbox">
+            <input type="checkbox" class="checkbox visually-hidden" />
+            <div class="modal_buy-now-product product-milkshake">
+              <div class="modal_buy-now-product__frame">
+                <div class="modal_buy-now-product__image">
+                  <img
+                    srcset="
+                      ./images/modal/milkshake@1x.png 1x,
+                      ./images/modal/milkshake@2x.png 2x
+                    "
+                    src="./images/modal/milkshake@1x.png"
+                    alt="Milkshake"
+                  />
+                </div>
+              </div>
+              <p class="modal_buy-now-product__name">Milkshake</p>
+            </div>
+          </label>
+        </li>
+      </ul>
+      <ul class="modal_buy-now-list list">
+        <li class="modal_buy-now-list__item">
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            class="modal_buy-now-form__input"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Name must be two words separated by space"
+            required
+          />
+        </li>
+        <li class="modal_buy-now-list__item">
+          <input
+            type="tel"
+            placeholder="Phone"
+            name="phone"
+            class="modal_buy-now-form__input"
+            pattern="/^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$/"
+            title="The number must contain 13 digits and start with +"
+            minlength="13"
+            maxlength="13"
+            required
+          />
+        </li>
+        <li class="modal_buy-now-list__item">
+          <textarea
+            placeholder="Comment"
+            name="comment"
+            class="modal_buy-now-form__input"
+          ></textarea>
+        </li>
+      </ul>
+      <button type="submit" class="modal_buy-now__button button">Submit</button>
+    </form>
+  </div>
+</div>
